@@ -48,7 +48,7 @@ groupby_subject_activity<-function(dataset){
 }
 tidy_dataset2<-function(dataset){
   dataset2<-dataset%>%group_by(subject,activity)%>%summarize_each(funs(mean))
-  write.table(dataset2, "tidy_data.txt", append = FALSE, sep = " ", dec = ".",row.names = TRUE, col.names = TRUE)
+  write.table(dataset2, "tidy_data.txt", append = FALSE, sep = " ", dec = ".",row.names = FALSE, col.names = FALSE)
   write.csv(dataset2,"tidy_data.csv")
   dataset2
 }
