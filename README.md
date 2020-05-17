@@ -2,11 +2,12 @@
 Getting and Cleaning Data Course Project Assignment
 
 run_analysis.R has the following functions:
-  merge_data() --->Task 1
-  extract_meanstd(dataset) --->Task2
-  activity_name(dataset) --->Task 3
-  var_name(dataset) --->Task 4
-  tidy_dataset2(dataset) --->Task 5
+  merge_data() --->Task 1,
+  extract_meanstd(dataset) --->Task2,
+  activity_name(dataset) --->Task 3,
+  var_name(dataset) --->Task 4,
+  tidy_dataset2(dataset) --->Task 5.
+  
 merge_data() function:
   Reads the data from X_train, X_test, y_train, y_test, subject_train, subject_test text files.
   Then merges the data using merge() from dplyr and cbind to variable "dataset".
@@ -32,5 +33,9 @@ tidy_dataset2() function:
 groupby_subject_activity() function:
   Groups the dataset by each activity and groups it by each subjects separately using group_by() function.
   
+codebook.md is a markdown file describing each variable of tidy dataset and the transormations applied.
 
+tidy_data.csv has tidy data in csv format.
+
+tidy_data.txt has tidy data in txt format
   
