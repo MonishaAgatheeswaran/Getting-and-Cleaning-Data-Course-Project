@@ -7,6 +7,32 @@ output: pdf_document
 
 
 # Data Dictionary - UCI HAR Dataset
+
+## Transformations applied to Data
+
+### Read and Merge data 
+Data from X_train, X_test, y_train, y_test, subject_train, subject_test text files are read using read.table() and merged using merge() and cbind().
+Dimension of the dataset thus obtained is 10299 rows, 563 column
+
+### Extract mean and std features
+Mean and standard deviation features are identified from features.txt file using grep function. 
+Data of mean and standard deviation features are obtained from dataset by subsetting it.
+
+### Activity labelling
+Activity labels are read from activity_labels.txt file. 
+Descriptive activity names given to activities in the data set.
+
+### Feature renaming
+Mean and standard deviation features are identified from features.txt file using grep function. 
+All the names of the dataset are renamed to corresponding descriptive variable names.
+
+### Creating tidy dataset
+The dataset is grouped by each subject and each activity using group_by() function. 
+Average of each variable for particular subject and activity are computed with summarise_each() function Above two instructions are pipelined( so that it applies on each group)
+The tidy data is written to "tidy_data.txt"(text file) and "tidy_data.csv"(csv file) using write.table and write.csv functions.
+
+## Description of each feature in the tidy data
+
 ### subject 2
   Each subject in the dataset refered by a number.
   
