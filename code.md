@@ -5,11 +5,10 @@ date: "17/05/2020"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 # Data Dictionary - UCI HAR Dataset
-## R Markdown
+### subject 2
+  Each subject in the dataset refered by a number
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
