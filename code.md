@@ -5,6 +5,9 @@ date: "17/05/2020"
 output: pdf_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 # Data Dictionary - UCI HAR Dataset
 ### subject 2
